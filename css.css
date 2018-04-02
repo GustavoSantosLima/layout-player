@@ -1,0 +1,73 @@
+body {
+    background-color: #000;
+}
+
+.row {margin-bottom: 0;}
+
+.banner {
+    height: 5vh;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 50px;
+    border-bottom: 3px solid #ccc;
+}
+
+.container-player {
+    width: 100vw;
+    height: 89vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.control-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    border: 3px solid #ccc;
+    border-radius: 50px;
+}
+
+.control-bar > ul {
+    display: flex;
+}
+
+.control-bar > ul > li > a {
+    margin: 0 10px;
+    padding: 5px 15px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.lado-a, .lado-b {
+    display: flex;
+    padding: 5px;
+}
+
+.lado-a {
+    flex-grow: 3;
+    flex-direction: column;
+}
+
+.lado-b {
+    flex-grow: 10;
+}
+
+.video, .presentation, .control-bar > ul > li > a {
+    flex-grow: 1;
+    background: #cccccc;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.video {
+    margin-bottom: 5px;
+}
+
+.video:last-child {
+    margin-bottom: 0;
+}
